@@ -1,0 +1,32 @@
+# Результаты сборки
+rodnik/output/*
+!rodnik/output/.gitkeep
+
+# Собранные ядра
+*.bzImage
+bzImage*
+vmlinux*
+System.map
+*.o
+*.ko
+*.mod.c
+.*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+
+# Логи
+*.log
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Initramfs (собирается скриптом)
+rodnik/initramfs/bin/
+rodnik/initramfs/usr/
+rodnik/initramfs/lib/
+rodnik/output/initramfs.cpio.gz
